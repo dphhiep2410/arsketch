@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xargs cat:*)",
+      "Bash(JAVA_HOME=\"C:/Program Files/Android/Android Studio/jbr\" ./gradlew assembleProductionDebug:*)",
+      "Read(//c/Program Files/Android/Android Studio/jbr/**)",
+      "Read(//c/Program Files/**)",
+      "Bash(where java:*)",
+      "Bash(cd \"C:/Users/ADMIN/AndroidStudioProjects/ArSketch\" && JAVA_HOME=\"C:/Program Files/Android/Android Studio/jbr\" ./gradlew :app:compileStagingDebugKotlin 2>&1 | tail -30)",
+      "Bash(find app/src/main/res/drawable -name \"halloween*.png\" -o -name \"tet_*.png\" -o -name \"valentine_*.png\" | xargs ls -lah)"
+    ]
+  }
+}

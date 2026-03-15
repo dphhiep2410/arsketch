@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_12sdp">
+
+    <ImageView
+        android:id="@+id/imvIcon"
+        android:layout_width="200dp"
+        android:layout_height="153dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_unlock_ads"
+        app:layout_constraintWidth_min="@dimen/_150sdp"
+        app:layout_constraintDimensionRatio="200:153"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".7" />
+
+    <TextView
+        android:id="@+id/tvUnlockItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:fontFamily="@font/f700"
+        android:text="@string/unlock_item"
+        android:textColor="@color/n1"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imvIcon" />
+
+    <TextView
+        android:id="@+id/tvWatchAds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:fontFamily="@font/f500"
+        android:text="@string/watch_ads_for_free"
+        android:textColor="@color/n1"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvUnlockItem" />
+
+    <LinearLayout
+        android:id="@+id/btnWatch"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:paddingHorizontal="@dimen/_30sdp"
+        android:paddingVertical="@dimen/_12sdp"
+        android:gravity="center"
+        android:background="@drawable/bg_primary_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foreground="@drawable/fg_ripple_effect_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvWatchAds">
+
+        <ImageView
+            android:id="@+id/imvAds"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/ic_watch_ads" />
+        <TextView
+            android:layout_marginStart="@dimen/_12sdp"
+            android:text="@string/watch_ads"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/n6"
+            android:fontFamily="@font/f500"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

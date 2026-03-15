@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layoutDirection="ltr"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.gms.ads.nativead.NativeAdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_native_ads"
+        android:layoutDirection="ltr"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:layoutDirection="ltr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/rootNativeAd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutDirection="ltr"
+                android:paddingBottom="@dimen/_4sdp"
+                android:visibility="visible"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/ad_headline"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginHorizontal="@dimen/_8sdp"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:fontFamily="@font/font_700"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textColor="@color/ad_textColor"
+                    android:textSize="@dimen/_12sdp"
+                    app:fontFamily="@font/font_700"
+                    app:layout_constraintBottom_toTopOf="@id/ad_body"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/ad_app_icon"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <ImageView
+                    android:id="@+id/btnHideNativeCollapse"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="end"
+                    android:visibility="gone"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:src="@drawable/ic_arrow_down_ad"
+                    android:translationZ="100dp"
+                    app:layout_constraintBottom_toBottomOf="@id/ad_app_icon"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/ad_app_icon" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ad_app_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="@id/ad_body"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.Barrier
+                    android:id="@+id/barrier3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:barrierDirection="bottom"
+                    app:constraint_referenced_ids="ad_app_icon,ad_headline,ad_body" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/ad_body"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:ellipsize="end"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:maxLines="1"
+                    android:textColor="@color/ad_textColor"
+                    android:textSize="@dimen/_10sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/ad_app_icon"
+                    app:layout_constraintTop_toBottomOf="@id/ad_attribution_1" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/ad_call_to_action"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_8sdp"
+                    android:background="@drawable/frame_share_ad_btn"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/_20sdp"
+                    android:paddingVertical="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/ad_text_btn_CTA"
+                    android:textSize="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/barrier3"
+                    app:layout_constraintWidth_min="@dimen/_100sdp" />
+
+                <TextView
+                    android:id="@+id/ad_attribution_1"
+                    android:layout_width="@dimen/_28sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:background="@drawable/bg_tv_ad"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:paddingHorizontal="@dimen/_4sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:fontFamily="@font/font_500"
+                    android:text="Ad"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    app:layout_constraintStart_toEndOf="@id/ad_app_icon"
+                    app:layout_constraintTop_toBottomOf="@id/ad_headline" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/adviser"
+                    android:fontFamily="@font/font_400"
+                    android:textSize="10dp"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@id/ad_attribution_1"
+                    app:layout_constraintTop_toTopOf="@id/ad_attribution_1"
+                    app:layout_constraintStart_toEndOf="@id/ad_attribution_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </FrameLayout>
+
+    </com.google.android.gms.ads.nativead.NativeAdView>
+    <include
+        android:id="@+id/shimmer"
+        layout="@layout/custom_native_ads_style_2_shimmer"
+        android:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

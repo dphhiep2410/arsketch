@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fillViewport="true"
+    android:paddingBottom="@dimen/_12sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:fontFamily="@font/f700"
+            android:gravity="center"
+            android:text="@string/how_to_use_sketch"
+            android:textColor="@color/n1"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imvGuide1"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:src="@drawable/ic_guide_1"
+            app:layout_constraintBottom_toBottomOf="@id/tvGuide1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvGuide1" />
+
+        <TextView
+            android:id="@+id/tvGuide1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/f500"
+            android:text="@string/sketch_guide_1"
+            android:textColor="@color/n1"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imvGuide1"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+        <ImageView
+            android:id="@+id/imvHowToUse1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:src="@drawable/ic_how_to_use_sketch_1"
+            app:layout_constraintDimensionRatio="328:196"
+            app:layout_constraintTop_toBottomOf="@id/tvGuide1" />
+
+        <ImageView
+            android:id="@+id/imvGuide2"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:src="@drawable/ic_guide_2"
+            app:layout_constraintBottom_toBottomOf="@id/tvGuide2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvGuide2" />
+
+        <TextView
+            android:id="@+id/tvGuide2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/f500"
+            android:text="@string/sketch_guide_2"
+            android:textColor="@color/n1"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imvGuide2"
+            app:layout_constraintTop_toBottomOf="@id/imvHowToUse1" />
+
+        <ImageView
+            android:id="@+id/imvHowToUse2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:src="@drawable/ic_how_to_use_sketch_2"
+            app:layout_constraintDimensionRatio="328:196"
+            app:layout_constraintTop_toBottomOf="@id/tvGuide2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

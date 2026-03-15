@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "555804711855",
+    "project_id": "ardraw-101c3",
+    "storage_bucket": "ardraw-101c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555804711855:android:0a424ef8ef30ae6cfbad5a",
+        "android_client_info": {
+          "package_name": "com.bestapp.ar.drawsketch.challenge"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCU-dp794ZBhJeY2DFbgsxx6XlVtLpNRB0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

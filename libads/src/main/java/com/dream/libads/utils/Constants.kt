@@ -1,0 +1,20 @@
+package com.dream.libads.utils
+
+object Constants {
+    const val TIME_OUT:Long = 15000
+    var TIME_OUT_DELAY:Long = 15000
+    var TIME_OUT_NATIVE:Long = 8000
+    fun testDevices(): List<String> {
+        return listOf(
+            "DE84AB3B057C90AF8FBD9446091BD425",
+            "B989BCAD52A558D37AFC3C508D411920",
+            "0B9F875B3EBF0F07D8943433B82D7CF5",
+            "D1001C40D12FB59956A18DF8A1503981",
+            "5A8167409A32C7D3AB959286717678D3",
+            "CC09F07C28216F699FDED6BA5B5D1DC5",
+            "29657BA4F8C7933429901148C62F5C0A",
+            "708460235ADAAE8E83F4A80732AA04FC",
+            "DE84AB3B057C90AF8FBD9446091BD425"
+        )
+    }
+}

@@ -1,0 +1,88 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.libads'
+    compileSdk 35
+
+    defaultConfig {
+        minSdk 23
+        targetSdk 35
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+    buildFeatures {
+        viewBinding true
+        buildConfig true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        viewBinding true
+        buildConfig true
+    }
+
+    buildToolsVersion '32.0.0'
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    androidTestImplementation 'androidx.test:runner:1.5.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+    implementation("com.google.code.gson:gson:2.10.1")
+
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.airbnb.android:lottie:6.1.0'
+    implementation 'com.facebook.shimmer:shimmer:0.5.0@aar'
+
+    implementation 'com.google.android.gms:play-services-ads:25.0.0'
+
+    implementation("com.squareup.picasso:picasso:2.71828")
+    implementation("androidx.recyclerview:recyclerview:1.4.0")
+    /*GDPR - Consent Admob EEA*/
+    implementation("com.google.android.ump:user-messaging-platform:4.0.0")
+    implementation 'com.android.installreferrer:installreferrer:2.2'
+    implementation 'com.google.android.gms:play-services-ads-identifier:18.3.0'
+
+    implementation 'com.google.ads.mediation:applovin:13.5.1.0'
+    implementation 'com.google.ads.mediation:facebook:6.21.0.1'
+    implementation 'com.google.ads.mediation:vungle:7.7.0.1'
+    implementation 'com.google.ads.mediation:pangle:7.9.0.9.0'
+    implementation 'com.google.ads.mediation:mintegral:17.0.81.0'
+
+    implementation 'com.unity3d.ads:unity-ads:4.16.6'
+    implementation 'com.google.ads.mediation:unity:4.16.6.0'
+    implementation 'com.google.ads.mediation:ironsource:9.3.0.1'
+
+    implementation 'com.facebook.android:facebook-android-sdk:latest.release'
+    /*AdjustTRacking*/
+    implementation 'com.adjust.sdk:adjust-android:5.5.0'
+    implementation 'com.android.installreferrer:installreferrer:2.2'
+    implementation 'com.google.android.gms:play-services-ads-identifier:18.3.0'
+    implementation 'com.adjust.sdk:adjust-android-webbridge:5.5.0'
+    //ssp, sdp
+    implementation("com.intuit.ssp:ssp-android:1.1.1")
+    implementation("com.intuit.sdp:sdp-android:1.1.1")
+}

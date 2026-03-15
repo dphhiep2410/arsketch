@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ad_primary_color">#43A047</color>
+    <color name="ad_stroke_color">#261E88E5</color>
+    <color name="ad_textColor">#000</color>
+    <color name="ad_text_btn_CTA">#000</color>
+    <color name="colorRatingBarNormal">#26202224</color>
+    <color name="colorRatingBarActivated">#FFB800</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="stroke_color">#261E88E5</color>
+    <color name="button">#FFB800</color>
+    <color name="buttonText">#000</color>
+    <color name="colorText">#000</color>
+    <color name="colorStar">#FFB800</color>
+    <color name="tt_transparent">#00ffffff</color>
+
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:minHeight">15dp</item>
+        <item name="android:maxHeight">15dp</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">#29BBCF</item>
+    </style>
+    <style name="RatingBarShimmer" parent="Theme.AppCompat">
+        <item name="colorControlNormal">#BBB</item>
+        <item name="colorControlActivated">@color/colorRatingBarActivated</item>
+    </style>
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">#BBB</item>
+        <item name="colorControlActivated">#FFB800</item>
+    </style>
+</resources>

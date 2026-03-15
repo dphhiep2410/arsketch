@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">ArSketch</string>
+
+    <string name="ENGLISH" translatable="false">English</string>
+    <string name="JAPANESE" translatable="false">日本</string>
+    <string name="KOREAN" translatable="false">"한국인 </string>
+    <string name="FRENCH" translatable="false">Français</string>
+    <string name="ITALIA" translatable="false">Italia</string>
+    <string name="GERMAN" translatable="false">Deutsch</string>
+    <string name="VIETNAM" translatable="false">Tiếng Việt</string>
+    <string name="INDONESIA" translatable="false">Indonesia</string>
+    <string name="BRAZIL" translatable="false">Brazil</string>
+    <string name="TURKEY" translatable="false">Türkiye</string>
+    <string name="SPAIN" translatable="false">España</string>
+    <string name="INDIA" translatable="false">भारत</string>
+
+    <string name="original">Original</string>
+    <string name="solid">Solid</string>
+    <string name="edge">Edge</string>
+    <string name="opacity">Opacity</string>
+    <string name="setting">Setting</string>
+    <string name="language">Language</string>
+    <string name="rate">Rate us</string>
+    <string name="share">Share</string>
+    <string name="privacy">Privacy</string>
+    <string name="sketch">Sketch</string>
+    <string name="trace">Trace</string>
+    <string name="how_to_use">How to use</string>
+    <string name="learn_to_sketch">Learn to sketch like an artist</string>
+    <string name="learn_content">"Learning to draw quickly and easily with apps is a great way to get started in the world of art "</string>
+    <string name="draw_sketch">Draw Sketch</string>
+    <string name="gallery">From Gallery</string>
+    <string name="camera">From Camera</string>
+    <string name="category">Category</string>
+    <string name="animal">Animal</string>
+    <string name="chibi">Chibi</string>
+    <string name="flower">Flower</string>
+    <string name="forkid">For kid</string>
+    <string name="learn_to_draw">Learn to draw</string>
+    <string name="manga">Manga</string>
+    <string name="nature">Nature</string>
+    <string name="people">People</string>
+    <string name="christmas">Christmas</string>
+    <string name="cute">Cute</string>
+    <string name="face">Face</string>
+    <string name="food">Food</string>
+    <string name="tattoo">Tattoo</string>
+    <string name="vegetable">Vegetable</string>
+    <string name="vehicle">Vehicle</string>
+    <string name="unlock_item">Unlock items</string>
+    <string name="watch_ads_for_free">Watch ads to unlock for free</string>
+    <string name="watch_ads">Watch ads</string>
+    <string name="tap_to_select">Tap to select</string>
+    <string name="permission">Permission</string>
+    <string name="permission_content">This app needs the camera permission to work properly.</string>
+    <string name="permission_content_1">This function needs "Read Image Permission" to load your image.</string>
+    <string name="allow_access">Allow access</string>
+    <string name="tvContinue">Continue</string>
+    <string name="loading_ads_new">ArSketch is running!</string>
+    <string name="title_onboard_1">Sketch your picture easily</string>
+    <string name="title_onboard_2">100+ beautiful\npainting templates</string>
+    <string name="title_onboard_3">Drawing made easy\nwith AR Camera</string>
+    <string name="content_onboard_1">Convert your picture into line sketch for easy drawing</string>
+    <string name="content_onboard_2">Learn and practice drawing skills every day with a variety of painting themes</string>
+    <string name="content_onboard_3">Redraw on paper through your camera</string>
+    <string name="this_action_can_contain_ads">(This action can contain ads)</string>
+    <string name="next">Next</string>
+    <string name="start">Start</string>
+    <string name="internet_not_available">Internet is not available!</string>
+    <string name="downloading">Downloading...</string>
+    <string name="error_orccured">An error orccured when downloading!</string>
+    <string name="how_to_use_sketch">How to use sketch</string>
+    <string name="sketch_guide_1">Place your phone on a tall object (a cup, box...) parallel to the table</string>
+    <string name="sketch_guide_2">The image will be displayed for tracing onto paper</string>
+    <string name="how_to_use_trace">How to use trace</string>
+    <string name="trace_guide_1">Select the picture you want and display it on the screen</string>
+    <string name="trace_guide_2">Place a sheet of paper over the screen and begin drawing</string>
+    <string name="draw_trace">Draw Trace</string>
+    <string name="choose_color_background">Choose color background</string>
+    <string name="custom_ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="hollow">Hollow</string>
+    <string name="apply">Apply</string>
+    <string name="language_title">Language</string>
+    <string name="the_best_we_can_get">The best we can get</string>
+    <string name="maybe_later">Maybe Later</string>
+    <string name="rate_us_button">Rate Now!</string>
+    <string name="ask_for_rate">If you enjoy this app, please leave us a 5 star review</string>
+    <string name="rate_on_google_play">Rate on google play!</string>
+    <string name="please_rate">Please rate!</string>
+    <string name="not_found_image">Oops, we can not find any image!</string>
+    <string name="draw">Draw</string>
+    <string name="challenge">Challenge</string>
+    <string name="save">Save</string>
+    <string name="pen">Pen</string>
+    <string name="pen_color">Pen color</string>
+    <string name="eraser">eraser</string>
+    <string name="bg_color">BG color</string>
+    <string name="create_image">Create Image</string>
+    <string name="this_app_need">This app needs access</string>
+    <string name="access_1">1. Tap open Settings</string>
+    <string name="access_2">2. Grants access to record</string>
+    <string name="access_3">2. Grant access to notification</string>
+    <string name="allow">Allow</string>
+    <string name="draw_challenge">Draw Challenge</string>
+    <string name="finish">Finish</string>
+    <string name="title_activity_finish">FinishActivity</string>
+    <string name="previous">Previous</string>
+    <string name="sample">Sample</string>
+    <string name="your_art">Your Art</string>
+    <string name="completed">Completed</string>
+    <string name="saving">Save your drawings in the library and compare your progress with the sample drawings</string>
+    <string name="take_another_photo">Take another photo</string>
+    <string name="record">Record</string>
+    <string name="draw_something">Draw something~~</string>
+    <string name="current_language">Current Language</string>
+    <string name="all_language">All languages</string>
+    <string name="selected_lang">You have not selected a language!</string>
+    <string name="halloween">Halloween</string>
+    <string name="tet_holiday">Tet</string>
+    <string name="valentine">Valentine</string>
+
+</resources>
